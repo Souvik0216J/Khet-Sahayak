@@ -1,9 +1,13 @@
-import Image from "next/image";
+'use client'
+import Hero from '@/components/Hero'
+import React from 'react'
 
-export default function Home() {
+function page() {
   return (
     <>
-    <h1 className="text-2xl text-red-400">Test</h1>
+      <Hero/>
     </>
-  );
+  )
 }
+
+export default page
