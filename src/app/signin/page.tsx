@@ -203,7 +203,7 @@ const SignInPage = () => {
 
             <div className="text-center space-y-3">
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Don't have an account?
+                Don&apos;t have an account?
               </p>
               <Link
                 href="/signup"

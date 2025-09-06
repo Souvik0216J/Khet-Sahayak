@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import { Button } from "./ui/button";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-emerald-800 dark:text-emerald-300">
-                      Developed by Team 4Bits 
+                      Developed by Team 4Bits
                     </div>
                     <div className="text-xs text-green-700 dark:text-green-400">
                       Sustainable Agriculture Solutions
@@ -159,12 +159,14 @@ const Hero: React.FC = () => {
               {/* Right Content - Natural Image */}
               <div className="relative">
                 <div className="relative z-10">
-                  <img
-                    src="./assets/homeRover.png"
+                  <Image
+                    src="/assets/homeRover.png"
                     alt="Sustainable farming technology in natural green landscape"
+                    width={600}
+                    height={400}
                     className="rounded-4xl shadow-2xl w-full h-96 object-cover border-4 border-white/50 dark:border-gray-700/50"
+                    priority
                   />
-
                   {/* Eco Status Overlay */}
                   <div className="absolute top-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg border border-green-200 dark:border-gray-600">
                     <div className="flex items-center space-x-2">
@@ -313,7 +315,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Footer */}
-        
+
       </main>
     </div>
   );
