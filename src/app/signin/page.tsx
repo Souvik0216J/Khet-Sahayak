@@ -66,7 +66,7 @@ const SignInPage = () => {
       });
 
       if (res.data.success) {
-        toast.success("🌿 Login successful! Welcome back to your eco-farm dashboard!");
+        toast.success("Login successful!");
         setTimeout(() => { router.push("/dashboard") }, 100);
         // Reset form
         setSignInData({
